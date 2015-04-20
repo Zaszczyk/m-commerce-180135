@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mateusz.lab01.MainFragment"
+    android:background="#000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        style="@style/AppTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:id="@+id/textView"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="77dp"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple"
+            android:id="@+id/simple"
+            android:layout_marginTop="169dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:minWidth="300dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced"
+            android:id="@+id/advanced"
+            android:minWidth="300dp"
+            android:layout_below="@+id/simple"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/about"
+            android:minWidth="300dp"
+            android:layout_below="@+id/advanced"
+            android:layout_alignLeft="@+id/advanced"
+            android:layout_alignStart="@+id/advanced" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/exit"
+            android:minWidth="300dp"
+            android:layout_below="@+id/about"
+            android:layout_alignLeft="@+id/about"
+            android:layout_alignStart="@+id/about" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

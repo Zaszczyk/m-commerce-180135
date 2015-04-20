@@ -1,0 +1,16 @@
+Aplikacja pogodowa
+Dwa fragmenty:
+-lista 3 poziomowa: kontynent, kraj, miasto. Na sztywno wpisane pozycje.
+-po wybraniu miasta, lista zamienia siê na fragment z widokiem ikonki pogody i jej opisem. Zestaw ikonek do pobrania z openweather.
+
+Po obróceniu ekranu, maj¹ byæ oba fragmenty.
+Dane pogodowe maj¹ sie cacheowac.
+
+api.openweathermap.org/data/2.5/weather?q=opole
+
+matchparrent vs fillparent
+matchparrent vs wrapcontent
+
+replaceFragment()
+fragmentManager()
+onBackPRessed() - ma nie zamykac aplikacji, tylko fragment wstecz.
