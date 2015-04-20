@@ -1,12 +1,10 @@
 package mateusz.lab01;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -73,18 +71,13 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     public void onBackPressed() {
-
-
         int count = getSupportFragmentManager().getBackStackEntryCount();
 
         if (count == 0) {
             super.onBackPressed();
-            //additional code
-        } else {
+        }
+        else {
             getSupportFragmentManager().popBackStack();
         }
-
     }
-
-
 }
